@@ -1,6 +1,6 @@
 ### 1\. Nome da Aplicação
 
-EcoRecicla — Sistema Integrado de Logística Reversa e Coleta Seletiva Domiciliar.
+ReciclaHub — Sistema Integrado de Logística Reversa e Coleta Seletiva Domiciliar.
 
 
 
