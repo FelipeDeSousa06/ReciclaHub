@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReciclaHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <a class="logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-line="round">
+                        <polyline points="23 4 23 10 17 10"></polyline>
+                        <polyline points="1 20 1 14 7 14"></polyline>
+                        <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                    </svg>
+                </span>
+                <span><span class="recicla">Recicla</span>Hub</span>
+            </a>
+
+        <nav>
+            <a class="active">Início</a>
+            <a href="./area-doador.html">Doador</a>
+            <a href="./area-coletor.html">Coletor</a>
+        </nav>
+
+        <div class="acoes">
+            <button class="btn-perfil" aria-label="Perfil">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="4"/>
+                  <path d="M4 20c0-4.5 3.5-7 8-7s8 2.5 8 7"/>
+                </svg>
+              </button>
+        </div>
+        </div>
+    </header>
+
+    <section class="bg-branco hero">
+        <div class="wrap">
+            <h1>Conectando quem recicla com quem coleta</h1>
+            <p>O ReciclaHub facilita o descarte correto de resíduos, conectando moradores e comércios com materiais recicláveis a catadores e cooperativas da região através de geolocalização.</p>
+        </div>
+    </section>
+
+    <section class="bg-verde-claro">
+        <div class="wrap">
+            <h2 class="titulo-secao">Como funciona</h2>
+            <div class="colunas-funciona">
+
+                <div class="coluna-funciona">
+                    <h3>Pra quem quer doar</h3>
+                    <div class="passo">
+                        <div class="passo-num">1</div>
+                        <p><strong>Cadastre o resíduo:</strong> informe o tipo de material, quantidade estimada e endereço.</p>
+                    </div>
+                    <div class="passo">
+                        <div class="passo-num">2</div>
+                        <p><strong>Aguarde a retirada:</strong> coletores da sua região recebem uma notificação e podem aceitar o chamado.</p>
+                    </div>
+                    <div class="passo">
+                        <div class="passo-num">3</div>
+                        <p><strong>Entregue com segurança:</strong> combine o horário e entregue na porta ou leve a um Ponto de Entrega Voluntária (PEV).</p>
+                    </div>
+                </div>
+
+                <div class="coluna-funciona">
+                    <h3>Para coletores e cooperativas</h3>
+                    <div class="passo">
+                        <div class="passo-num">1</div>
+                        <p><strong>Explore o mapa:</strong> visualize solicitações de retirada ativas na sua região em tempo real.</p>
+                    </div>
+                    <div class="passo">
+                        <div class="passo-num">2</div>
+                        <p><strong>Aceite chamados:</strong> escolha os pedidos mais próximos para otimizar sua rota de coleta.</p>
+                    </div>
+                    <div class="passo">
+                        <div class="passo-num">3</div>
+                        <p><strong>Cadastre pontos fixos:</strong> divulgue o endereço da cooperativa e quais materiais ela aceita.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-branco">
+        <div class="wrap">
+            <h2 class="titulo-secao">O que você pode doar</h2>
+            <div class="grid-materiais">
+
+                <div class="material">
+                    <div class="material-icone">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="9" y="2" width="6" height="3" rx="1"/>
+                            <rect x="6" y="6" width="12" height="15" rx="3"/>
+                        </svg>
+                    </div>
+                    <h3>Plásticos</h3>
+                    <p>Garrafas PET, embalagens de limpeza, tampas, potes e sacolas.</p>
+                </div>
+
+                <div class="material">
+                    <div class="material-icone">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                            <rect x="4" y="8" width="16" height="12" rx="1"/>
+                            <line x1="4" y1="12" x2="20" y2="12"/>
+                            <line x1="12" y1="8" x2="12" y2="20"/>
+                        </svg>
+                    </div>
+                    <h3>Papéis e Papelão</h3>
+                    <p>Caixas dobradas, jornais, revistas e embalagens longa vida.</p>
+                </div>
+
+                <div class="material">
+                    <div class="material-icone">
+                        <div class="metal"></div>
+                    </div>
+                    <h3>Metais</h3>
+                    <p>Latas de alumínio, enlatados de aço, fiações e sucatas.</p>
+                </div>
+
+                <div class="material">
+                    <div class="material-icone">
+                        <svg svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
+                            <path d="M7 3h10l-3 17h-4z"/>
+                        </svg>
+                    </div>
+                    <h3>Vidros</h3>
+                    <p>Garrafas, potes e frascos, de preferência sem tampa.</p>
+                </div>
+
+                <div class="material">
+                    <div class="material-icone">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                            <rect x="7" y="7" width="10" height="10" rx="1"/>
+                            <line x1="9" y1="3" x2="9" y2="7"/>
+                            <line x1="15" y1="3" x2="15" y2="7"/>
+                            <line x1="9" y1="17" x2="9" y2="21"/>
+                            <line x1="15" y1="17" x2="15" y2="21"/>
+                            <line x1="3" y1="9" x2="7" y2="9"/>
+                            <line x1="3" y1="15" x2="7" y2="15"/>
+                            <line x1="17" y1="9" x2="21" y2="9"/>
+                            <line x1="17" y1="15" x2="21" y2="15"/>
+                        </svg>
+                    </div>
+                    <h3>Eletrônicos</h3>
+                    <p>Pilhas, baterias, celulares e pequenos aparelhos em geral.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 ReciclaHub. Reciclagem mais simples para todo mundo.</p>
+    </footer>
+
+</body>
+</html>

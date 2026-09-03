@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReciclaHub - Criar Conta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <a href="../../index.html" class="logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-line="round">
+                        <polyline points="23 4 23 10 17 10"></polyline>
+                        <polyline points="1 20 1 14 7 14"></polyline>
+                        <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                    </svg>
+                </span>
+                <span><span class="recicla">Recicla</span>Hub</span>
+            </a>
+
+        <nav>
+            <a href="../../index.html">Início</a>
+            <a href="../public/area-doador-public.html">Doador</a>
+            <a href="../public/area-coletor-public.html">Coletor</a>
+        </nav>
+
+        <div class="acoes">
+            <a href="./login.html" class="login-link">Login</a>
+            <button class="btn-cadastro">Cadastrar-se</button>
+        </div>
+        </div>
+    </header>
+
+    <section class="bg-branco cadastro-section">
+        <div class="wrap">
+            <h1>Cadastro</h1>
+            <form class="cadastro-form">
+
+                <div class="grupo-campo">
+                    <h2>Perfil de uso <span class="nota-leve">(você pode selecionar ambos)</span></h2>
+                    <div class="checkbox-linha">
+                        <input type="checkbox" id="perfil-doador">
+                        <label for="perfil-doador">Quero doar resíduos (Doador)</label>
+                    </div>
+                    <div class="checkbox-linha">
+                        <input type="checkbox" id="perfil-coletor">
+                        <label for="perfil-coletor">Quero coletar / represento uma cooperativa (Coletor)</label>
+                    </div>
+                </div>
+
+                <div class="grupo-campo">
+                    <h2>Dados pessoais / Identificação</h2>
+                    <div class="campo">
+                        <label for="nome">Nome completo / Razão social</label>
+                        <input type="text" id="nome" placeholder="Digite seu nome ou empresa">
+                    </div>
+                    <div class="campo">
+                        <label for="documento">CPF ou CNPJ</label>
+                        <input type="text" id="documento" placeholder="000.000.000-00">
+                    </div>
+                    <div class="campo">
+                        <label for="telefone">Telefone / Whatsapp</label>
+                        <input type="text" id="telefone" placeholder="(00) 00000-0000">
+                    </div>
+                </div>
+
+                <div class="grupo-campo">
+                    <h2>Endereço principal</h2>
+                    <div class="campo">
+                        <label for="cep">CEP</label>
+                        <input type="text" id="cep" placeholder="00000-000">
+                    </div>
+                    <div class="campo">
+                        <label for="rua">Rua / Avenida</label>
+                        <input type="text" id="rua">
+                    </div>
+                    <div class="campo">
+                        <label for="numero">Número</label>
+                        <input type="text" id="numero">
+                    </div>
+                    <div class="campo">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" id="bairro">
+                    </div>
+                    <div class="campo">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" id="complemento">
+                    </div>
+                    <div class="campo">
+                        <label for="referencia">Ponto de Referência</label>
+                        <input type="text" id="referencia">
+                    </div>
+                </div>
+
+                <div class="grupo-campo condicional" id="secao-doador">
+                    <h2>Informações do doador</h2>
+                    <div class="checkbox-linha">
+                        <input type="checkbox" id="doador-entrega-casa">
+                        <label for="doador-entrega-casa">
+                            Também aceito que o coletor retire o material na minha própria casa
+                            <span class="sub-texto">Se não marcar, você mesmo leva o material até um Ponto de Entrega Voluntária (PEV).</span>
+                            <span class="sub-texto">Essa opção pode ser alterada a qualquer momento</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="grupo-campo condicional" id="secao-coletor">
+                    <h2>Informações do coletor</h2>
+                    <p class="texto-ajuda">Selecione uma ou as duas opções - essa opção pode ser alterada a qualquer momento</p>
+                    <div class="checkbox-linha">
+                        <input type="checkbox" id="coletor-fixo">
+                        <label for="coletor-fixo">Coletor fixo - tenho um ponto de coleta com endereço fixo</label>
+                    </div>
+                    <div class="checkbox-linha">
+                        <input type="checkbox" id="coletor-itinerante">
+                        <label for="coletor-itinerante">Coletor itinerante - saio para coletar nas ruas</label>
+                    </div>
+
+                    <div class="condicional" id="bloco-materiais">
+                        <p class="rotulo-grupo">
+                            Quais materiais você aceita?
+                            <span class="sub-texto">O endereço usado será o da seção "Endereço principal" acima</span>
+                            <span class="sub-texto">Os materiais podem ser alterados a qualquer momento</span>
+                        </p>
+                        <div class="materiais-checkbox">
+                            <div class="checkbox-linha">
+                                <input type="checkbox" id="material-plastico">
+                                <label for=material-plastico>Plásticos</label>
+                            </div>
+                            <div class="materiais-checkbox">
+                                <input type="checkbox" id="material-papel">
+                                <label for="material-papel">Papéis e papelão</label>
+                            </div>
+                            <div class="materiais-checkbox">
+                                <input type="checkbox" id="material-metal">
+                                <label for="material-metal">Metais</label>
+                            </div>
+                            <div class="materiais-checkbox">
+                                <input type="checkbox" id="material-vidro">
+                                <label for="material-vidro">Vidros</label>
+                            </div>
+                            <div class="materiais-checkbox">
+                                <input type="checkbox" id="material-eletronico">
+                                <label for="material-eletronico">Eletrônicos</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="condicional" id="bloco-transporte">
+                        <div class="campo">
+                            <label for="transporte">Meio de transporte</label>
+                            <select id="transporte">
+                                <option value="">Selecione uma opção</option>
+                                <option value="pe">A pé</option>
+                                <option value="bicicleta">Bicicleta</option>
+                                <option value="carrinho">Carrinho de mão</option>
+                                <option value="carro">Carro</option>
+                                <option value="moto">Moto</option>
+                                <option value="caminhao">Caminhão</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grupo-campo">
+                    <h2>Credenciais de acesso</h2>
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="seuemail@exemplo.com">
+                    </div>
+                    <div class="campo">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha">
+                    </div>
+                    <div class="campo">
+                        <label for="confirmar-senha">Confirmar senha</label>
+                        <input type="password" id="confirmar-senha">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-cadastro">Cadastrar</button>
+
+            </form>
+            <p class="login-cadastro largura-form">Já tem uma conta? <a href="./login.html">Faça login aqui</a>.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 ReciclaHub. Reciclagem mais simples para todo mundo.</p>
+    </footer>
+
+</body>
+</html>
