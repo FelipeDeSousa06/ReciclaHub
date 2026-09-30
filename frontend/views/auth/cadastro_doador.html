@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReciclaHub — Tornar-se Doador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+
+            <a href="../private/inicio.html" class="logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="23 4 23 10 17 10"></polyline>
+                        <polyline points="1 20 1 14 7 14"></polyline>
+                        <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                    </svg>
+                </span>
+                <span><span class="recicla">Recicla</span>Hub</span>
+            </a>
+
+            <nav>
+                <a href="../private/inicio.html">Início</a>
+                <a href="../private/area-doador.html">Doador</a>
+                <a href="../private/area-coletor.html">Coletor</a>
+            </nav>
+
+            <div class="acoes">
+                <button class="btn-perfil" aria-label="Perfil">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="8" r="4"/>
+                        <path d="M4 20c0-4.5 3.5-7 8-7s8 2.5 8 7"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </header>
+        
+    <section class="bg-branco cadastro-section">
+        <div class="wrap">
+            <h1>Tornar-se Doador</h1>
+            <p class="texto-ajuda largura-form">
+                Você já é coletor no ReciclaHub. Preencha a informação abaixo para também passar a atuar como doador — seus dados pessoais e endereço já cadastrados serão reaproveitados.
+            </p>
+            <form class="cadastro-form">
+
+                <div class="grupo-campo">
+                    <h2>Informações de doador</h2>
+                    <div class="checkbox-linha">
+                        <input type="checkbox" id="doador-entrega-casa">
+                        <label for="doador-entrega-casa">
+                            Também aceito que o coletor retire o material na minha própria casa
+                        <span class="sub-texto">Se não marcar, você mesmo leva o material até um Ponto de Entrega Voluntária (PEV).</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-cadastro">Tornar-se doador</button>
+
+            </form>
+            <p class="login-cadastro largura-form">Mudou de ideia? <a href="../private/perfil.html">Voltar para o perfil</a>.</p>
+        </div>
+    </section>
+ 
+    <footer>
+        <p>© 2026 ReciclaHub. Reciclagem mais simples para todo mundo.</p>
+    </footer>
+ 
+</body>
+</html>

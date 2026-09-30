@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReciclaHub — Tornar-se Coletor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="wrap">
+
+            <a href="../private/inicio.html" class="logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="23 4 23 10 17 10"></polyline>
+                        <polyline points="1 20 1 14 7 14"></polyline>
+                        <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                    </svg>
+                </span>
+                <span><span class="recicla">Recicla</span>Hub</span>
+            </a>
+
+            <nav>
+                <a href="../private/inicio.html">Início</a>
+                <a href="../private/area-doador.html">Doador</a>
+                <a href="../private/area-coletor.html">Coletor</a>
+            </nav>
+
+            <div class="acoes">
+                <button class="btn-perfil" aria-label="Perfil">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="8" r="4"/>
+                        <path d="M4 20c0-4.5 3.5-7 8-7s8 2.5 8 7"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="bg-branco cadastro-section">
+        <div class="wrap">
+            <h1>Tornar-se Coletor</h1>
+            <p class="texto-ajuda largura-form">
+                Você já é doador no ReciclaHub. Preencha as informações abaixo para também passar a atuar como coletor — seus dados pessoais e endereço já cadastrados serão reaproveitados.
+            </p>
+            <form class="cadastro-form">
+
+                <div class="grupo-campo">
+                    <h2>Informações de coletor</h2>
+                    <p class="texto-ajuda">Selecione uma ou as duas opções — você pode ser os dois tipos ao mesmo tempo.</p>
+                    <div class="checkbox-linha">
+                        <input type="checkbox" id="coletor-fixo">
+                        <label for="coletor-fixo">Coletor fixo — tenho um ponto de coleta com endereço fixo</label>
+                    </div>
+                    <div class="checkbox-linha">
+                        <input type="checkbox" id="coletor-itinerante">
+                        <label for="coletor-itinerante">Coletor itinerante — saio para coletar nas ruas</label>
+                    </div>
+
+                    <!-- Coletor fixo -->
+                    <div class="condicional" id="bloco-materiais">
+                        <p class="rotulo-grupo">
+                            Quais materiais você aceita?
+                            <span class="sub-texto">Será usado o mesmo endereço já cadastrado no seu perfil.</span>
+                        </p>
+                        <div class="materiais-checkbox">
+                            <div class="checkbox-linha">
+                                <input type="checkbox" id="material-plastico">
+                                <label for="material-plastico">Plásticos</label>
+                            </div>
+                            <div class="checkbox-linha">
+                                <input type="checkbox" id="material-papel">
+                                <label for="material-papel">Papéis e papelão</label>
+                            </div>
+                            <div class="checkbox-linha">
+                                <input type="checkbox" id="material-metal">
+                                <label for="material-metal">Metais</label>
+                            </div>
+                            <div class="checkbox-linha">
+                                <input type="checkbox" id="material-vidro">
+                                <label for="material-vidro">Vidros</label>
+                            </div>
+                            <div class="checkbox-linha">
+                                <input type="checkbox" id="material-eletronico">
+                                <label for="material-eletronico">Eletrônicos</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coletor itinerante -->
+                    <div class="condicional" id="bloco-transporte">
+                        <div class="campo">
+                            <label for="transporte">Meio de transporte</label>
+                            <select id="transporte">
+                                <option value="">Selecione uma opção</option>
+                                <option value="pe">A pé</option>
+                                <option value="bicicleta">Bicicleta</option>
+                                <option value="carrinho">Carrinho de mão</option>
+                                <option value="carro">Carro</option>
+                                <option value="moto">Moto</option>
+                                <option value="caminhao">Caminhão</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-cadastro">Tornar-se coletor</button>
+
+            </form>
+            <p class="login-cadastro largura-form">Mudou de ideia? <a href="../private/perfil.html">Voltar para o perfil</a>.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 ReciclaHub. Reciclagem mais simples para todo mundo.</p>
+    </footer>
+
+</body>
+</html>

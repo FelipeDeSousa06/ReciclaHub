@@ -41,11 +41,109 @@
         </div>
     </header>
 
-    <!--
-        # AQUI VAI VIR SECTION #
+    <section class="bg-branco cadastro-section">
+        <div class="wrap">
+            <h1>Painel do Coletor</h1>
+            <p class="texto-ajuda largura-form">Veja as solicitações abertas na sua região, acompanhe suas coletas em rota e as retiradas agendadas no seu ponto de entrega.</p>
+       
+            <h2 class="titulo-secao">Solicitações disponíveis próximas de você</h2>
+            <div class="mapa-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
+                    <circle cx="12" cy="9" r="5"/>
+                    <path d="M8 13 L12 21 L16 13 Z"/>
+                </svg>
+                <p>Mapa interativo em breve</p>
+                <p class="aviso">Aqui vão aparecer as solicitações de retirada</p>
+            </div>
 
-        COMO EU AINDA NÃO SEI COMO VOU FAZER TOTALMENTE, IREI FAZER DEPOIS
-    -->
+            <div class="grupo-campo largura-form">
+                <h2>Solicitações abertas</h2>
+                <div class="lista-solicitacoes">
+
+                    <div class="solicitacao-item">
+                        <div class="solicitacao-info">
+                            <h3>Exemplo 1</h3>
+                            <p>Setor Bueno · a 1,2 km de você</p>
+                        </div>
+                        <div class="solicitacao-acoes">
+                            <button type="button" class="btn-aceitar">Aceitar</button>
+                        </div>
+                    </div>
+       
+                    <div class="solicitacao-item">
+                        <div class="solicitacao-info">
+                            <h3>Exemplo 2</h3>
+                            <p>Jardim América · a 2,8 km de você</p>
+                        </div>
+                        <div class="solicitacao-acoes">
+                            <button type="button" class="btn-aceitar">Aceitar</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <h2 class="titulo-secao espaco-superior">Minhas coletas em rota</h2>
+            <p class="texto-ajuda largura-form">Você pode ter no máximo 2 coletas em rota ao mesmo tempo. Finalize ou cancele uma para poder aceitar novas solicitações.</p>
+            <div class="grupo-campo largura-form">
+                <div class="lista-solicitacoes">
+       
+                    <div class="solicitacao-item">
+                        <div class="solicitacao-info">
+                            <h3>Exemplo 1</h3>
+                            <p>Setor Oeste · Retirada em casa</p>
+                        </div>
+                        <div class="solicitacao-acoes">
+                            <span class="status-badge status-andamento">Em andamento</span>
+                            <button type="button" class="btn-texto btn-texto-positivo">Finalizar</button>
+                            <button type="button" class="btn-texto btn-texto-negativo">Cancelar</button>
+                        </div>
+                    </div>
+
+                    <div class="solicitacao-item">
+                        <div class="solicitacao-info">
+                            <h3>Exemplo 2</h3>
+                            <p>Setor Bueno · Retirada em casa</p>
+                        </div>
+                        <div class="solicitacao-acoes">
+                        <span class="status-badge status-aguardando">Aguardando confirmação do doador</span>
+                        </div>
+                    </div>
+       
+                </div>
+            </div>
+       
+            <h2 class="titulo-secao espaco-superior">Solicitações para o seu ponto de entrega</h2>
+            <p class="texto-ajuda largura-form">Pessoas que escolheram levar o material até o seu PEV em vez de agendar retirada. Confirme quando o material chegar até você.</p>
+            <div class="grupo-campo largura-form">
+                <div class="lista-solicitacoes">
+       
+                    <div class="solicitacao-item">
+                        <div class="solicitacao-info">
+                            <h3>Exemplo 1</h3>
+                            <p>Solicitado por um doador da região</p>
+                        </div>
+                        <div class="solicitacao-acoes">
+                            <span class="status-badge status-pendente">Aguardando entrega</span>
+                            <button type="button" class="btn-texto btn-texto-positivo">Confirmar recebimento</button>
+                        </div>
+                    </div>
+       
+                    <div class="solicitacao-item">
+                        <div class="solicitacao-info">
+                            <h3>Exemplo 2</h3>
+                            <p>Solicitado por um doador da região</p>
+                        </div>
+                        <div class="solicitacao-acoes">
+                            <span class="status-badge status-pendente">Aguardando entrega</span>
+                            <button type="button" class="btn-texto btn-texto-positivo">Confirmar recebimento</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+      </section>
 
     <footer>
         <p>© 2026 ReciclaHub. Reciclagem mais simples para todo mundo.</p>

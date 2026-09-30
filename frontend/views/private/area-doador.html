@@ -41,11 +41,144 @@
         </div>
     </header>
 
-    <!--
-        # AQUI VAI VIR SECTION #
+    <section class="bg-branco cadastro-section">
+        <div class="wrap">
+            <h1>Painel do Doador</h1>
+            <p class="texto-ajuda largura-form">
+                Acompanhe os pontos de entrega voluntária próximos, abra novas solicitações de coleta e gerencie as que já estão em andamento.
+            </p>
 
-        COMO EU AINDA NÃO SEI COMO VOU FAZER TOTALMENTE, IREI FAZER DEPOIS
-    -->
+            <h2 class="titulo-secao">Pontos de entrega voluntária próximos</h2>
+            <div class="mapa-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
+                    <circle cx="12" cy="9" r="5"/>
+                    <path d="M8 13 L12 21 L16 13 Z"/>
+                </svg>
+                <p>Aqui vai um mapa</p>
+                <p class="aviso">Aqui vão aparecer os PEVs cadastrados</p>
+            </div>
+
+            <h2 class="titulo-secao espaco-superior">Abrir nova solicitação</h2>
+            <form class="cadastro-form">
+
+                <div class="grupo-campo">
+                    <h2>Tipo de material</h2>
+                    <div class="materiais-checkbox">
+                        <div class="checkbox-linha">
+                            <input type="checkbox" id="mat-plastico">
+                            <label for="mat-plastico">Plásticos</label>
+                        </div>
+                        <div class="checkbox-linha">
+                            <input type="checkbox" id="mat-papel">
+                            <label for="mat-papel">Papéis e papelão</label>
+                        </div>
+                        <div class="checkbox-linha">
+                            <input type="checkbox" id="mat-metal">
+                            <label for="mat-metal">Metais</label>
+                        </div>
+                        <div class="checkbox-linha">
+                            <input type="checkbox" id="mat-vidro">
+                            <label for="mat-vidro">Vidros</label>
+                        </div>
+                        <div class="checkbox-linha">
+                            <input type="checkbox" id="mat-eletronico">
+                            <label for="mat-eletronico">Eletrônicos</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grupo-campo">
+                    <h2>Detalhes do material</h2>
+                    <div class="campo">
+                        <label for="quantidade">Quantidade estimada</label>
+                        <select id="quantidade">
+                            <option value="">Selecione uma opção</option>
+                            <option value="pequena">Pequena — cabe em uma sacola</option>
+                            <option value="media">Média — alguns sacos</option>
+                            <option value="grande">Grande — vou precisar de ajuda para carregar</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="descricao">Descrição (opcional)</label>
+                        <textarea id="descricao" rows="3" placeholder="Ex: garrafas PET e algumas caixas de papelão"></textarea>
+                    </div>
+                    <div class="campo">
+                        <label for="foto">Foto do material (opcional)</label>
+                        <input type="file" id="foto" accept="image/*">
+                    </div>
+                </div>
+
+                <div class="grupo-campo">
+                    <h2>Como prefere entregar?</h2>
+                    <div class="checkbox-linha">
+                        <input type="radio" name="entrega" id="entrega-casa">
+                        <label for="entrega-casa">Retirada no meu endereço cadastrado</label>
+                    </div>
+                    <div class="checkbox-linha">
+                        <input type="radio" name="entrega" id="entrega-pev">
+                        <label for="entrega-pev">
+                            Vou levar a um Ponto de Entrega Voluntária
+                        <span class="sub-texto">Selecione o ponto desejado no mapa acima.</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-cadastro">Criar solicitação</button>
+
+            </form>
+            <h2 class="titulo-secao espaco-superior">Minhas solicitações</h2>
+            <div class="grupo-campo largura-form">
+                <div class="lista-solicitacoes">
+
+                    <div class="solicitacao-item">
+                        <div class="solicitacao-info">
+                             <h3>Exemplo 1</h3>
+                            <p>Aberta em 02/09/2026 · Retirada em casa</p>
+                        </div>
+                        <div class="solicitacao-acoes">
+                            <span class="status-badge status-pendente">Pendente</span>
+                            <button type="button" class="btn-texto">Cancelar</button>
+                        </div>
+                    </div>
+
+                    <div class="solicitacao-item">
+                        <div class="solicitacao-info">
+                            <h3>Exemplo 2</h3>
+                            <p>Aberta em 28/08/2026 · Ponto de Entrega Voluntária</p>
+                        </div>
+                        <div class="solicitacao-acoes">
+                            <span class="status-badge status-andamento">Em andamento</span>
+                            <button type="button" class="btn-texto btn-texto-positivo">Finalizar</button>
+                            <button type="button" class="btn-texto bnt-texto-negativo">Cancelar</button>
+                        </div>
+                    </div>
+
+                    <div class="solicitacao-item">
+                        <div class="solicitacao-info">
+                            <h3>Exemplo 3</h3>
+                            <p>Aberta em 20/08/2026 · Retirada em casa</p>
+                        </div>
+                        <div class="solicitacao-acoes">
+                            <span class="status-badge status-aguardando">Aguardando confirmação do coletor</span>
+                        </div>
+                    </div>
+
+                    <div class="solicitacao-item">
+                        <div class="solicitacao-info">
+                            <h3>Exemplo 4</h3>
+                            <p>Concluída em 15/08/2026</p>
+                        </div>
+                        <div class="solicitacao-acoes">
+                            <span class="status-badge status-concluido">Concluído</span>
+                            <button type="button" class="btn-gorjeta">Ajude o coletor</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <footer>
         <p>© 2026 ReciclaHub. Reciclagem mais simples para todo mundo.</p>
