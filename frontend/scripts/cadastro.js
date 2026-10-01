@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
       { id: 'confirmar-senha', mensagem: 'Confirme a senha.' }
     ];
 
-    var idsMateriais = ['mat-plastico', 'mat-papel', 'mat-metal', 'mat-vidro', 'mat-eletronico'];
+    var idsMateriais = ['material-plastico', 'material-papel', 'material-metal', 'material-vidro', 'material-eletronico'];
 
     function mostrarErro(id, mensagem) {
       var campo = document.getElementById(id);
