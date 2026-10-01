@@ -78,7 +78,8 @@
   nav a {
     color: rgba(255,255,255,0.9);
     text-decoration: none;
-    font-size: 15px; font-weight: 700;
+    font-size: 15px; 
+    font-weight: 700;
     padding: 6px 2px 4px;
     border-bottom: 4px solid transparent;
     transition: border-color 0.15s ease;
@@ -382,6 +383,16 @@
     margin: 0 0 16px;
   } 
 
+  .texto-ajuda a {
+    color: #3FA35C;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .texto-ajuda a:hover {
+    text-decoration: underline;
+  }
+
  .rotulo-grupo {
     font-size: 14px;
     font-weight: 500;
@@ -462,6 +473,28 @@
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     color: #5F5E5A;
+  }
+
+  .campo input.campo-invalido, .campo select.campo-invalido { 
+    border-color: #B33A3A;
+  }
+
+  .campo input.campo-invalido:focus, .campo select.campo-invalido:focus {
+    border-color: #B33A3A;
+    box-shadow: 0 0 0 3px rgba(179,58,58,0.15);
+  }
+
+  mensagem-erro {
+    display: block;
+    color: #B33A3A;
+    font-size: 12.5px;
+    margin-top: 4px;
+  }
+
+  .mensagem-erro-grupo {
+    color: #B33A3A;
+    font-size: 12.5px;
+    margin-top: 10px;
   }
 
   .materiais-checkbox {
